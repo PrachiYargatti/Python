@@ -1,0 +1,13 @@
+from datetime import datetime
+
+def time_difference(date_str):
+    date_format = "%b %d %Y %I:%M %p"
+    date = datetime.strptime(date_str, date_format)
+    next_year = datetime(date.year + 1, 1, 1)
+    diff = next_year - date
+    hours = diff.days * 24 + diff.seconds // 3600
+    minutes = (diff.seconds // 60) % 60
+    return "{} hours {} minutes".format(hours,minutes)
+
+date_str = input()
+print(time_difference(date_str))
