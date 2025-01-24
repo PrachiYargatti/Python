@@ -1,0 +1,10 @@
+from datetime import datetime
+
+date = input()
+date_format = "%d %b %Y"
+
+datetime_obj = datetime.strptime(date, date_format)
+
+weekday_name = datetime_obj.strftime("%A")
+
+print(weekday_name)
