@@ -1,0 +1,11 @@
+from datetime import datetime,timedelta
+
+d1 = input()
+d2 = input()
+
+start_obj = datetime.strptime(d1, "%b %d %Y")
+end_obj = datetime.strptime(d2, "%b %d %Y")
+n_days = (end_obj - start_obj).days
+
+for i in range(n_days+1):
+    print(start_obj + timedelta(days=i))
