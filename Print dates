@@ -1,0 +1,9 @@
+from datetime import datetime, timedelta
+
+given_date = input()
+delta = timedelta(days = 1)
+
+datetime_obj = datetime.strptime(given_date, "%d %b %Y")
+print(datetime_obj-delta)
+print(datetime_obj)
+print(datetime_obj+delta)
