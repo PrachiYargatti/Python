@@ -1,0 +1,17 @@
+def check_rotation(s1, s2):
+    if len(s1) != len(s2):
+        return "No Match"
+    for i in range(len(s1)):
+        index = s1.index(s2[0])
+        rotation = index % len()
+        return rotation
+    return "No Match"
+
+s1 = input()
+s2 = input()
+
+result = check_rotation(s1, s2)
+if result != "No Match":
+    print(result)
+else:
+    print("No Match")
