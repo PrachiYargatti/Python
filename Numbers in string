@@ -1,0 +1,10 @@
+string=input()
+s=0
+c=0
+for i in string:
+    if i.isdigit():
+        s+=int(i)
+        c+=1
+        avg=s/c
+print(s)
+print(round(avg,2))
