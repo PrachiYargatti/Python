@@ -1,0 +1,14 @@
+first = input()
+second = input()
+
+if second[0] in first:
+    index=first.index(second[0])
+    first=first[index:]
+    L=len(first)
+    result=""
+    for i in range(L):
+        if first[i]==second[i]:
+            result+=first[i]
+    print(result)
+else:
+    print("No overlapping")
