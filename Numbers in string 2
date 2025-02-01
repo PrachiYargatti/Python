@@ -1,0 +1,26 @@
+def sum_and_average_of_numbers(sentence):
+    numbers = []
+    current_number = ""
+
+    for char in sentence:
+        if char.isdigit():
+            current_number += char
+        elif current_number != "":
+            numbers.append(int(current_number))
+            current_number = ""
+
+    if current_number != "":
+        numbers.append(int(current_number))
+
+    if len(numbers) == 0:
+        return "No numbers found in the sentence."
+
+    total_sum = sum(numbers)
+    average = total_sum / len(numbers)
+
+    return total_sum,average
+
+sentence = input()
+s,avg=(sum_and_average_of_numbers(sentence))
+print(s)
+print(round(avg,2))
