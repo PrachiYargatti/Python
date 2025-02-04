@@ -1,0 +1,10 @@
+n=int(input())
+
+result=[]
+for i in range(n):
+    num_list=input().split()
+    for i in range(len(num_list)):
+        num_list[i]=int(num_list[i])
+    if len(num_list)==len(set(num_list)):
+        result.append(num_list)
+print(result)
