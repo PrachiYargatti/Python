@@ -1,0 +1,12 @@
+n=int(input())
+
+zero_index_list=[]
+one_index_list=[]
+for i in range(n):
+    index=input().split()
+    zero_index_list.append(int(index[0]))
+    one_index_list.append(int(index[1]))
+zero_index_list=(max(zero_index_list),min(zero_index_list))
+one_index_list=(max(one_index_list),min(one_index_list))
+print(zero_index_list)
+print(one_index_list)
