@@ -1,0 +1,15 @@
+def convert_str_to_int(nested_list):
+    L=[]
+    for i in nested_list:
+        num=int(i)
+        L.append(num)
+    return L
+    
+n=int(input())
+
+result=[]
+for i in range(n):
+    nested_list = input().split()
+    nested_list = convert_str_to_int(nested_list)
+    result.append(nested_list)
+print(result)
