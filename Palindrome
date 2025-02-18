@@ -1,0 +1,14 @@
+def is_palindrome(string):
+    # Complete this recursive function
+    if string==string[::-1]:
+        return True
+    else:
+        return False
+
+
+
+string = input().lower()
+
+is_true = is_palindrome(string)# Call the is_palindrome function
+
+print(is_true)
