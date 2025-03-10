@@ -1,0 +1,11 @@
+let compositeNumbers = [4, 6, 8, 9];
+
+let index = compositeNumbers.findIndex(function(eachNumber) {
+  if (eachNumber === "8") {  
+    return true;
+  } else {
+    return false;
+  }
+});
+
+console.log(index);
