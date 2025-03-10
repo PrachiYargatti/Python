@@ -1,0 +1,9 @@
+let value = "3";
+
+if (value === 3) {
+  console.log("'3' is not equal to 3");
+} else if (parseInt(value) === 3) {
+  console.log("3 is equal to 3");    
+} else {
+  console.log("parseInt converts a string to number");    
+}
