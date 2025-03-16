@@ -1,0 +1,18 @@
+def convert_to_key_value_pair(keys, values):
+    dict_a = dict()
+    length = len(keys)
+    for i in range(length):
+        key = keys[i]
+        value = values[i]
+        dict_a[key] = value
+    return dict_a
+    
+keys = input().split(",")
+values = input().split(",")
+
+student_details = convert_to_key_value_pair(keys, values)
+student_details_item = student_details.items()
+student_details = sorted(student_details_item)
+
+for item in student_details:
+    print(*item)
