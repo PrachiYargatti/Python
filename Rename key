@@ -1,0 +1,22 @@
+fruits = {
+    "apples": 10,
+    "bananas": 20,
+    "mangoes": 15,
+    "oranges": 200,
+    "watermelons": 50
+}
+
+# Write your code here
+key = input()
+new_key = input()
+
+fruits_items = list(fruits.items())
+fruits_items_copy = fruits_items.copy()
+fruits_count = len(fruits_items)
+
+for i in range(fruits_count):
+    if fruits_items[i][0] == key:
+        updated_tuple = (new_key, fruits_items[i][1])
+        fruits_items_copy[i] = updated_tuple
+        
+print(fruits_items_copy)
