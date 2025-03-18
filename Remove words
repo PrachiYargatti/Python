@@ -1,0 +1,9 @@
+sentence = input().split()
+k = int(input())
+
+result=""
+for word in sentence:
+    if(len(word)!=k):
+        result += word + " "
+        
+print(result)
