@@ -1,0 +1,11 @@
+string = input()
+
+alphabets = ""
+numbers = ""
+for i in string:
+    if i.isalpha():
+        alphabets += i
+    if i.isdigit():
+        numbers += i
+        
+print(alphabets + numbers)
