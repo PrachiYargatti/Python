@@ -1,0 +1,7 @@
+a=int(input())
+b=int(input())
+c=int(input())
+p=(a+b)>c
+q=(b+c)>a 
+r=(a+c)>b 
+print(p and q and r)
