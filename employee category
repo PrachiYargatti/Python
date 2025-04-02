@@ -1,0 +1,8 @@
+salary = int(input("enter employee salary: "))
+
+if(salary > 50000):
+    print("High Income")
+elif(salary >= 30000):
+    print("Medium Income")
+else:
+    print("Low Income")
