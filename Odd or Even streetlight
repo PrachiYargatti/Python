@@ -1,0 +1,6 @@
+streetlight = int(input())
+
+if(streetlight % 2 == 0):
+    print("streetlight should be ON")
+else:
+    print("streetlight should be OFF")
