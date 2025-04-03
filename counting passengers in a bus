@@ -1,0 +1,7 @@
+# 4.counting passengers in a bus
+
+total_passengers = 0
+for i in range(1,6):
+    n = int(input("enter no. of passengers at stop %i: "%(i)))
+    total_passengers += n
+print("total number of passengers from 5 stops are: %i"%(total_passengers))
