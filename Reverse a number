@@ -1,0 +1,6 @@
+# 6.Reverse a number
+
+n = input()
+reversed_string = n[::-1]
+
+print("reversed number is: ",reversed_string)
