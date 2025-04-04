@@ -1,0 +1,16 @@
+# 8.shopping cart - list
+
+cart = []
+
+while True:
+  item = input("Enter item to add (or type 'done' to finish): ").strip()
+  if(item.lower() == "done"):
+    break
+  cart.append(item)
+
+print("\nShopping Cart Items are: ")
+if cart:
+  for item in cart:
+    print(item)
+else:
+  print("your cart is empty")
