@@ -1,0 +1,11 @@
+# 9.Student Grades - tuple
+
+grades = tuple(float(input(f"enter grade of student {i+1}: "))for i in range(5))
+
+highest = max(grades)
+lowest = min(grades)
+average = sum(grades)/len(grades)
+
+print(f"highest grade is: {highest}")
+print(f"lowest grade is: {lowest}")
+print(f"average grade is: {average}")
