@@ -1,0 +1,6 @@
+def remove_duplicates(book_titles):
+   return list(set(book_titles))
+
+books = ["The Great Gatsby", "1948", "The Great Gatsby", "To Kill a Mockingbird", "The Great Gatsby"]
+unique_books = remove_duplicates(books)
+print(unique_books)
