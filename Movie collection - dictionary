@@ -1,0 +1,27 @@
+# 10.Movie collection - dictionary
+
+movies = {}
+
+def add_movie(name, rating):
+  movies[name] = rating
+  print(f"Added: {name} with rating {rating}")
+
+def update_rating(name, rating):
+  if name in movies:
+    movies[name] = rating
+    print(f"Updated: {name} to rating {rating}")
+  else:
+    print(f"Movie '{name}' not found!")
+
+def display_movies():
+  if movies:
+    print("\nMovie Collection: ")
+    for name, rating in movies.items():
+      print(f"{name}: {rating}/10")
+  else:
+    print("No movies in the collection.")
+
+add_movie("Chhava", 9)
+add_movie("Super 30", 8.5)
+update_rating("chhava", 9.5)
+display_movies()
