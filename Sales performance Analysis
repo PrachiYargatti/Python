@@ -1,0 +1,15 @@
+# 1. Sales performance Analysis
+
+import numpy as np
+
+Monthly_Sales = np.array([5000, 7000, 8000, 6500, 7200, 9000, 8500])
+
+Mean = Monthly_Sales.mean()
+
+Max = Monthly_Sales.max()
+
+Min = Monthly_Sales.min()
+
+print("Highest sales: ", Max)
+print("Lowest sales: ", Min)
+print("Average sales: ", Mean)
