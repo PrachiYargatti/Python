@@ -1,0 +1,17 @@
+# 13. student grade calculator
+
+def displayGradeOfStudent(marks):
+  if marks >= 90:
+    return "A"
+  elif marks >= 80:
+    return "B"
+  elif marks >= 70:
+    return "C"
+  elif marks >= 60:
+    return "D"
+  else:
+    return "F"
+
+marks = int(input("enter marks: "))
+grade = displayGradeOfStudent(marks)
+print("grade is: ",grade)
