@@ -1,0 +1,8 @@
+# 3.calculate total revenue
+
+quantities = np.array([10, 15, 7, 20])
+prices = np.array([50, 40, 100, 30])
+
+total_revenue = np.sum(quantities * prices)
+
+print("Total Revenue: ", total_revenue)
