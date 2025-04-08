@@ -1,0 +1,7 @@
+# 2. Reshape a 1D array into 2D Matrix
+
+oneD_array = np.array([1000, 1200, 1500, 1800, 2000, 2100, 2500, 2700])
+
+twoD_array = oneD_array.reshape(4, 2)
+
+print(twoD_array)
