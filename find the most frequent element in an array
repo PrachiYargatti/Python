@@ -1,0 +1,7 @@
+# 5.find the most frequent element in an array
+
+array = np.array([1, 2, 2, 3, 3, 3, 4, 4, 4, 4])
+
+most_frequent_element = np.bincount(array).argmax()
+
+print("Most frequent element: ", most_frequent_element)
