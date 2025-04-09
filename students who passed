@@ -1,0 +1,7 @@
+# 4.find students who passed
+
+marks = np.array([35, 60, 42, 75, 29, 90, 55])
+
+passed_students = marks[marks >= 40]
+
+print("Students who passed: ", passed_students)
