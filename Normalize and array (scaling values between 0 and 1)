@@ -1,0 +1,7 @@
+# 6.Normalize ana array (scaling values between 0 and 1)
+
+scores = np.array([50, 80, 90, 60, 75, 85])
+
+normalized_scores = (scores - scores.min()) / (scores.max() - scores.min())
+
+print("Normalized scores: ", normalized_scores)
