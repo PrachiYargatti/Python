@@ -1,0 +1,5 @@
+n1=input()
+n2=input()
+l1=len(n1)
+l2=len(n2)
+print(n1[l1-3:l1]==n2[l2-3:l2])
