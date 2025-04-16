@@ -1,0 +1,5 @@
+n1=input()
+n2=input()
+fofn1=int(n1[0])
+lofn2=int(n2[2])
+print(fofn1<lofn2)
