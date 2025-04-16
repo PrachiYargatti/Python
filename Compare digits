@@ -1,0 +1,6 @@
+N=int(input())
+print(N>25)
+N=str(N)
+f=int(N[0])
+sec=int(N[1])
+print(f>sec) 
